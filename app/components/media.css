@@ -11,8 +11,8 @@
 }
 @media only screen and (max-width: 546px) {
   .medias {
-    color: red;
-    display: none;
+    /* color: red; */
+    font-size: 8px !important;
   }
   .input-seach {
     font-size: 12px !important;
