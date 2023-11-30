@@ -2,7 +2,7 @@
 
 import qs from "query-string";
 import { useRouter, useSearchParams } from "next/navigation";
-import "./navbar/media.css";
+import "./media.css";
 import { useCallback } from "react";
 import { IconType } from "react-icons";
 

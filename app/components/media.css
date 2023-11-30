@@ -1,0 +1,36 @@
+.button-media {
+  display: none !important;
+}
+@media only screen and (max-width: 800px) {
+  .medias {
+    font-size: 10px !important;
+  }
+  .button-media {
+    display: flex !important;
+  }
+}
+@media only screen and (max-width: 546px) {
+  .medias {
+    color: red;
+    display: none;
+  }
+  .input-seach {
+    font-size: 12px !important;
+  }
+  /* .button-media {
+    display: flex !important;
+  } */
+}
+@media only screen and (max-width: 666px) {
+  .footer-media {
+    padding: 1rem !important;
+    margin-top: 3rem;
+  }
+}
+@media only screen and (max-width: 464px) {
+  .footer-media {
+    padding: 1rem !important;
+    margin-top: 3rem;
+    font-size: 12px;
+  }
+}

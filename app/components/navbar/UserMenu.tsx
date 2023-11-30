@@ -4,6 +4,7 @@ import { useCallback, useState } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 import { signOut } from "next-auth/react";
 import { useRouter } from "next/navigation";
+import "../media.css";
 
 import useLoginModal from "@/app/hooks/useLoginModal";
 import useRegisterModal from "@/app/hooks/useRegisterModal";
@@ -88,14 +89,15 @@ const UserMenu: React.FC<UserMenuProps> = ({ currentUser }) => {
             absolute
             rounded-xl
             shadow-md
-            w-[40vw]
+            w-[50vw]
             md:w-3/4
             bg-white
             overflow-hidden
             right-0
-            top-12
+
             text-sm
-          ">
+          "
+          style={{ top: "70px" }}>
           <div className="flex flex-col cursor-pointer">
             {currentUser ? (
               <>
@@ -115,6 +117,11 @@ const UserMenu: React.FC<UserMenuProps> = ({ currentUser }) => {
                   label="Tour Của Tôi"
                   onClick={() => router.push("/properties")}
                 />
+                <button
+                  className=" flex    px-4    py-3 bg-fuchsia-900 font-bold text-white    hover:opacity-70    transition button-media   "
+                  onClick={rentModal.onOpen}>
+                  Thêm Tour Của Bạn
+                </button>
 
                 <hr />
                 <button

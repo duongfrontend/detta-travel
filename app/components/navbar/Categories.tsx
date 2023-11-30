@@ -1,7 +1,6 @@
 "use client";
 
 import { usePathname, useSearchParams } from "next/navigation";
-import "./media.css";
 import { TbBeach, TbMountain, TbPool } from "react-icons/tb";
 import {
   GiBarn,

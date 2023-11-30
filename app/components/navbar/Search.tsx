@@ -76,6 +76,7 @@ const Search = () => {
             text-sm
             font-semibold
             px-6
+            input-seach
           ">
           {locationLabel}
         </div>
