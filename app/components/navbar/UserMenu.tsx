@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-comment-textnodes */
 "use client";
 
 import { useCallback, useState } from "react";
@@ -101,6 +102,13 @@ const UserMenu: React.FC<UserMenuProps> = ({ currentUser }) => {
           <div className="flex flex-col cursor-pointer">
             {currentUser ? (
               <>
+                <div className="flex justify-center items-center flex-col p-4 cursor-default">
+                  <Avatar src={currentUser?.image} />
+                  {/* <Image src={currentUser.image} /> */}
+                  <div className="mt-2 font-bold text-rose-500">
+                    {currentUser?.name}
+                  </div>
+                </div>
                 <MenuItem
                   label="Tour Đã Đặt"
                   onClick={() => router.push("/trips")}
